@@ -29,6 +29,14 @@ yum -y update
 
 
 ###
+### vim
+###
+
+yum -y install vim-enhanced
+echo -e 'alias vi='\''vim'\' >> /etc/profile
+source /etc/profile
+
+###
 ### etc
 ###
 
