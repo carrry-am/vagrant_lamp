@@ -23,7 +23,7 @@
 
 * 日本時間設定
 * SELinuxを無効に
-* ファイヤウォールを無効に
+* ファイアウォールを無効に
 * `php.ini`と`httpd.conf`は用意したものを使用。デフォルトのものは`/mnt/project/backup`にコピーしている。
 
 ## How to use
