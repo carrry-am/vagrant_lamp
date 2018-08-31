@@ -28,6 +28,12 @@
 
 ## How to use
 
+vagrant-vbguestプラグインをインストールしていない場合のみ以下を行う
+```bash
+vagrant plugin install vagrant-vbguest
+```
+
+立ち上げ
 ```bash
 vagrant up
 
