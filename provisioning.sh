@@ -40,7 +40,7 @@ source /etc/profile
 ### etc
 ###
 
-yum -y install wget zip unzip
+yum -y install wget zip unzip tree
 
 ###
 ### date
