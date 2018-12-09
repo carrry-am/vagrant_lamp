@@ -40,6 +40,27 @@ vagrant up
 # プロビジョニングでSELinuxの設定を変更しており、反映させるためのリロードが必要
 vagrant reload
 ```
+※追記：上記で起動した際、ディレクトリのマウントの際エラーになってしまっています。
+```bash
+The error output from the command was:
+
+/sbin/mount.vboxsf: mounting failed with the error: No such device
+```
+
+対処法：ゲストOSでyumをアップデートさせる必要があります。
+```bash
+vagrant ssh
+
+[ゲストOS]$ sudo yum -y update
+```
+
+vagrantをリロード
+```bash
+vagrant reload
+```
+
+これで、うまくいくはずです。（このような面倒なことをしなくてもいいように改善策調べ中）
+
 
 ## 立ち上げ後の確認
 
