@@ -70,4 +70,10 @@ Vagrant.configure("2") do |config|
   # SHELL
   config.ssh.insert_key = false
   config.vm.provision :shell, :path => "./provisioning.sh", :privileged => true
+  
+  #ネットワーク接続が遅いので追加
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--natdnsproxy1", "off"]
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "off"]
+  end
 end
