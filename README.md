@@ -28,6 +28,11 @@
 
 ## How to use
 
+cloneしたら、ディレクトリ名をvagrantに変更
+```bash
+mv vagrant_lamp vagrant
+```
+
 vagrant-vbguestプラグインをインストールしていない場合のみ以下を行う
 ```bash
 vagrant plugin install vagrant-vbguest
