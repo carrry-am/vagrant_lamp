@@ -41,9 +41,6 @@ vagrant plugin install vagrant-vbguest
 立ち上げ
 ```bash
 vagrant up
-
-# プロビジョニングでSELinuxの設定を変更しており、反映させるためのリロードが必要
-vagrant reload
 ```
 ※追記：上記で起動した際、ディレクトリのマウントの際エラーになってしまっています。
 ```bash
